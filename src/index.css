@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@font-face {
+    font-family: "Modern Negra";
+    src: url("/public/fonts/Modern\ Negra\ Demo.ttf") format("woff");
+}
+body {
+    font-family: "Modern Negra", sans-serif;
+}
