@@ -1,8 +1,44 @@
 @import "tailwindcss";
+
 @font-face {
     font-family: "Modern Negra";
     src: url("/public/fonts/Modern\ Negra\ Demo.ttf") format("woff");
 }
+:root {
+    --color-yellow: #e7d393;
+    --color-white-100: #efefef;
+    --font-sans: "Mona Sans", sans-serif; 
+    --font-modern-negra: "Modern Negra", sans-serif;
+    --font-serif:  "DM Serif Text", serif;
+}
+
+@utility text-gradient {
+    background: linear-gradient(to bottom, #ffffff,#898989);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+@utility radial-gradient {
+    background: radial-gradient(
+        circle at center,
+        #434343 0%,
+        #000 50%,
+        transparent 100%
+    );
+}
+@utility masked-img {
+    mask-image: url("/public/images/mask-img.png");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 50%;
+    
+}
+
+html,
 body {
-    font-family: "Modern Negra", sans-serif;
+    width: 100%;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
