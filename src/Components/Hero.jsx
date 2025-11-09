@@ -1,10 +1,42 @@
 import React from 'react'
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { SplitText } from 'gsap/all';
 
 const Hero = () => {
+
+    useGSAP(() => {
+        const heroSplit = new SplitText('.title', {
+            type: 'chars, words' 
+        });
+        const paragraphSplit = new SplitText('.subtitles', {
+            type: 'lines'
+        });
+
+        heroSplit.chars.forEach((char) => char.classList.add('text-gradient'));
+        gsap.from(heroSplit.chars, {
+            yPercent: 100,
+            delay: 0.4,
+            duration: 0.7,
+            ease: 'expo.out',
+            stagger: 0.1,
+            autoAlpha: 0
+        });
+
+        gsap.from(paragraphSplit.lines, {
+            opacity: 0,
+            yPercent: 100,
+            duration: 1.8,
+            ease: 'expo.out',
+            stagger: 0.1,
+            delay: 1.4
+        })
+    }, []);
+
   return (
     <>
     <section id="hero" className=" absolute inset-0 size-full ">
-        <h1 className="hero-text">MOJITO</h1>
+        <h1 className="hero-text title">MOJITO</h1>
         <img src="/public/images/hero-left-leaf.png" alt="left-leaf" className='left-leaf '/>
         <img src="/public/images/hero-right-leaf.png" alt="right-leaf" className="right-leaf" />
 
@@ -12,11 +44,11 @@ const Hero = () => {
             <div className="content">
                 <div className="sub-text">
                     <p className="max-w-xl">Cool. Crisp. Classic.</p>
-                    <p>Sip the Spirit <br />of Summer </p>
+                    <p className="subtitles">Sip the Spirit <br />of Summer </p>
                 </div>
                 
                 <div className="subtitle">
-                    <p className="">Every cocktail on our menu is a blend of premium ingredients,
+                    <p className="subtitles">Every cocktail on our menu is a blend of premium ingredients,
                          creative flair, and timeless recipes designed to delight your senses.
                     </p>
                     <a href="#">View cocktails</a>
