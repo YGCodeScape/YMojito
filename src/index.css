@@ -47,4 +47,21 @@ nav {
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 9;
+}
+#hero {
+    background: url(/public/images/noise.png);
+}
+.left-leaf {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    width: 17.17%;
+}
+.hero-text {
+    font-size: 10rem;
+    line-height: 1;
+    font-family: var(--font-modern-negra);
+    margin-top: 7rem;
+    text-align: center;
 }
