@@ -9,6 +9,7 @@ const App = () => {
   return (
     <main>
       <Navbar />
+      <div className= "w-full h-[200vh] bg-white/30" ></div>
     </main>
   )
 }

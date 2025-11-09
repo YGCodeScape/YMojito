@@ -8,7 +8,8 @@ const Navbar = () => {
     const navTween = gsap.timeline({
       scrollTrigger: {
         trigger: 'nav',
-        start: 'bottom top'
+        start: 'bottom top',
+        markers: true
       }
     });
      
@@ -38,7 +39,7 @@ const Navbar = () => {
         </ul>
 
       </div>
-    </nav>
+    </nav> 
   )
 }
 

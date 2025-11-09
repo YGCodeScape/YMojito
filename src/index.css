@@ -45,5 +45,6 @@ body {
 
 nav {
     width: 100%;
-    border: 2px solid red;
+    position: fixed;
+    top: 0;
 }
