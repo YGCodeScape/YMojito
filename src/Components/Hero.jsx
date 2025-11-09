@@ -31,6 +31,19 @@ const Hero = () => {
             stagger: 0.1,
             delay: 1.4
         })
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#hero',
+                start: 'top top',
+                end: 'bottom top',
+                scrub: true,
+                // markers: true
+            }
+        })
+        .to('.right-leaf', {y: 300 }, 0)
+        .to('.left-leaf', {y : -300}, 0)
+
     }, []);
 
   return (
