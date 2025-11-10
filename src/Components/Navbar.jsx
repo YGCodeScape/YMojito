@@ -14,7 +14,7 @@ const Navbar = () => {
     });
      
     navTween.fromTo('nav', {backgroundColor: 'transparent'}, {
-      backgroundColor: '#00000050',
+      backgroundColor: '#000000ba',
       backgroundFilter: 'blur(10px)',
       duration: 1,
       ease: 'power1.out',
@@ -30,7 +30,7 @@ const Navbar = () => {
           <span className="text-2xl font-bold">YMojito's</span>
         </a>
 
-        <ul className='flex items-center justify-between gap-8 list-none'>
+        <ul className='flex items-center justify-between gap-5 list-none'>
           {navLinks.map((link) => (
             <li key={link.id}>
                <a href= {`#${link.id}`}>{link.title}</a>
