@@ -41,7 +41,7 @@ const Hero = () => {
                 start: 'top top',
                 end: 'bottom top',
                 scrub: true,
-                // markers: true
+                
             }
         })
         .to('.right-leaf', {y: 300 }, 0)
@@ -57,7 +57,7 @@ const Hero = () => {
                 trigger: 'video',
                 start: startValue,
                 end: endValue,
-                scrub: 0.3,
+                scrub: 0.4,
                 pin: true,
             }
         })
