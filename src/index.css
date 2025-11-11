@@ -74,7 +74,7 @@ nav li:hover a{
     color: #d1c2ff;
 }
 #hero {
-    background: url(/public/images/noise.png);
+    /* background: url(/public/images/noise.png); */
     z-index: 2;
 }
 .left-leaf {
@@ -92,6 +92,7 @@ nav li:hover a{
 .hero-text {
     font-size: 15rem;
     line-height: 1;
+    letter-spacing: 2px;
     font-family: var(--font-modern-negra);
     margin-top: 5rem;
     text-align: center;
@@ -143,12 +144,11 @@ nav li:hover a{
     color: #784cfa;
 }
 video { 
-    width: 80%;
+    width: 70%;
     height: 80%;
     position: absolute;
-    left: 10%;
-    top: 30%;
+    left: 15%;
+    top: 25%;
     object-position: bottom;
     object-fit: cover;
-    border: 2px solid red;
 }
