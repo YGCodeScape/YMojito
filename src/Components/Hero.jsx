@@ -8,66 +8,66 @@ const Hero = () => {
     const videoRef = useRef();
     const isMobile = useMediaQuery({maxWidth: 767 })
 
-    // useGSAP(() => {
-    //     const heroSplit = new SplitText('.title', {
-    //         type: 'chars, words' 
-    //     });
-    //     const paragraphSplit = new SplitText('.subtitles', {
-    //         type: 'lines'
-    //     });
+    useGSAP(() => {
+        const heroSplit = new SplitText('.title', {
+            type: 'chars, words' 
+        });
+        const paragraphSplit = new SplitText('.subtitles', {
+            type: 'lines'
+        });
 
-    //     heroSplit.chars.forEach((char) => char.classList.add('text-gradient'));
-    //     gsap.from(heroSplit.chars, {
-    //         yPercent: 100,
-    //         delay: 0.4,
-    //         duration: 0.7,
-    //         ease: 'expo.out',
-    //         stagger: 0.1,
-    //         autoAlpha: 0
-    //     });
+        heroSplit.chars.forEach((char) => char.classList.add('text-gradient'));
+        gsap.from(heroSplit.chars, {
+            yPercent: 100,
+            delay: 0.4,
+            duration: 0.7,
+            ease: 'expo.out',
+            stagger: 0.1,
+            autoAlpha: 0
+        });
 
-    //     gsap.from(paragraphSplit.lines, {
-    //         opacity: 0,
-    //         yPercent: 100,
-    //         duration: 1.8,
-    //         ease: 'expo.out',
-    //         stagger: 0.1,
-    //         delay: 1.4
-    //     })
+        gsap.from(paragraphSplit.lines, {
+            opacity: 0,
+            yPercent: 100,
+            duration: 1.8,
+            ease: 'expo.out',
+            stagger: 0.1,
+            delay: 1.4
+        })
 
-    //     gsap.timeline({
-    //         scrollTrigger: {
-    //             trigger: '#hero',
-    //             start: 'top top',
-    //             end: 'bottom top',
-    //             scrub: true,
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#hero',
+                start: 'top top',
+                end: 'bottom top',
+                scrub: true,
                 
-    //         }
-    //     })
-    //     .to('.right-leaf', {y: 300 }, 0)
-    //     .to('.left-leaf', {y : -300}, 0)
+            }
+        })
+        .to('.right-leaf', {y: 300 }, 0)
+        .to('.left-leaf', {y : -300}, 0)
 
 
-    //     const startValue = isMobile ? 'top 50%' : 'center 60%';
-    //     const endValue = isMobile ? '120% top' : 'bottom top';
+        const startValue = isMobile ? 'top 50%' : 'center 60%';
+        const endValue = isMobile ? '120% top' : 'bottom top';
 
-    //     // video animation timeline
-    //     const tl = gsap.timeline({
-    //         scrollTrigger: {
-    //             trigger: 'video',
-    //             start: startValue,
-    //             end: endValue,
-    //             scrub: 0.4,
-    //             pin: true,
-    //         }
-    //     })
+        // video animation timeline
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: 'video',
+                start: startValue,
+                end: endValue,
+                scrub: 0.4,
+                pin: true,
+            }
+        })
 
-    //     videoRef.current.onloadedmetadata = () => {
-    //         tl.to(videoRef.current, {
-    //             currentTime: videoRef.current.duration
-    //         })
-    //     }
-    // }, []);
+        videoRef.current.onloadedmetadata = () => {
+            tl.to(videoRef.current, {
+                currentTime: videoRef.current.duration
+            })
+        }
+    }, []);
 
   return (
     <>
