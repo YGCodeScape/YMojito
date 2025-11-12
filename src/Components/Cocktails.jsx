@@ -8,12 +8,12 @@ const Cocktails = () => {
       <img src="/public/images/cocktail-right-leaf.png" alt="" className='cock-right-leaf' />
 
       <div className="list">
-         <div className="popular space-y-8 ">
+         <div className="popular space-y-4 ">
            <h2>Most popular cocktails:</h2>
 
-           <ul>
+           <ul className = 'space-y-4 '>
              {cocktailLists.map(({ name, country, detail, price }) => (
-              <li ley={name}>
+              <li key={name}>
                 <div className=''>
                   <h3>{name}</h3>
                   <p>{country} | {detail}</p>
@@ -23,12 +23,12 @@ const Cocktails = () => {
              ))}
            </ul>
          </div>
-         <div className="loved space-y-8">
+         <div className="loved space-y-4 ">
              <h2>Most Loved mocktails:</h2>
 
-             <ul>
+             <ul className = 'space-y-4 '>
                {mockTailLists.map(({ name, country, detail, price }) => (
-                <li ley={name}>
+                <li key={name}>
                    <div className=''>
                      <h3>{name}</h3>
                      <p>{country} | {detail}</p>
