@@ -1,8 +1,28 @@
 import React from 'react'
+import gsap from 'gsap'
 import { cocktailLists, mockTailLists } from '../../constants'
+import { useGSAP } from '@gsap/react'
 
 const Cocktails = () => {
-  
+   useGSAP(() => {
+    const parallaxTl = gsap.timeline({
+      scrollTrigger: {
+         trigger: '#cocktails',
+         start: 'top 30%',
+         end: 'bottom bottom',
+         scrub: true
+      }
+    })
+    parallaxTl
+    .from('.cock-left-leaf', {
+       x: -100,
+       y: 100
+    })
+    .from('.cock-right-leaf', {
+       x: 100,
+       y: 100
+    })
+   })
 
   return (
     <section id="cocktails" className='cocktails-sec'>
