@@ -2,9 +2,11 @@ import React from 'react'
 import { cocktailLists, mockTailLists } from '../../constants'
 
 const Cocktails = () => {
+  
+
   return (
     <section id="cocktails" className='cocktails-sec'>
-            <img src="/public/images/cocktail-left-leaf.png" alt="" className='cock-left-leaf '/>
+      <img src="/public/images/cocktail-left-leaf.png" alt="" className='cock-left-leaf '/>
       <img src="/public/images/cocktail-right-leaf.png" alt="" className='cock-right-leaf' />
 
       <div className="list">
