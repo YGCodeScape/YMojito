@@ -31,7 +31,22 @@
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: 50%;
-    
+}
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url(/public/images/IceCube.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition:all 0.3s;
 }
 
 html,
@@ -188,6 +203,7 @@ video {
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
+    gap: 40px;
 }
 .list li h3 {
     font-size: 19px;
