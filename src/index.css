@@ -69,24 +69,8 @@ nav li {
     position: relative;
     display: inline-block;
 }
-nav li::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #784cfa;
-    border-radius: 5px;
-    transform-origin: left;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-nav li:hover::after {
-    transform: scaleX(1);
-}
 nav li:hover a{
-    color: #d1c2ff;
+    opacity: 0.3;
 }
 #hero {
     /* background: url(/public/images/noise.png); */
@@ -195,10 +179,12 @@ video {
     bottom: 0;
     right: 0;
     width: 250px;
+    
 }
 .list h2 {
     font-size: 23px;
-    color: #f492f0;
+    font-weight: 700;
+    color: #dfc415;
 }
 .list li {
     display: flex;
