@@ -2,26 +2,25 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>
-        <div id='about'>
-            <div className='mb-12 px-5'>
-                <div className="content">
-                    <div className="first-content">
-                        <p className="badge">Best Cocktails</p>
-                        <h2>Where every details matters -from <br /> muddle to garnish</h2>
-                    </div>
-                    <div className="sub-content">
+    <div id='about' className="container">
+        <div className='mb-12 border'>
+             <div className="content">
+                 <div className="first-content">
+                     <p className="badge">Best Cocktails</p>
+                     <h2>Where every details <br /> matters -from muddle<br /> to garnish</h2>
+                 </div>
+                 <div className="sub-content w-1/3">
                         <p>Every cocktail we serve is a reflection of our obsession with detail from the first muddle to the final garnish.
                             That care is what turns a simple drink into something truly memorable
                         </p>
-                        <div>
-                            <p className=""><span>4.5</span>/5</p>
-                            <p className="text-sm">More than +12000 customers</p>
+                        <div className="rating-d" >
+                            <p><span>4.5 /</span> 5</p>
+                            <p>More than +12000 customers</p>
                         </div>
-                    </div>
-                </div>
-            </div>
+                 </div>
+             </div>
         </div>
+
         <div className="top-grid">
              <div className="ab-i-holder">
                  <img src="/images/abt1.png" alt="" />

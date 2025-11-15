@@ -151,6 +151,8 @@ video {
     object-position: bottom;
     object-fit: cover;
 }
+
+/* cocktails section */
 .cocktails-sec {
     position: relative;
     min-height: 100vh;
@@ -204,4 +206,52 @@ video {
 .list span {
     font-size: 19px;
      opacity: 0.8;
+}
+/* abut page */
+#about {
+    min-height: 100%;
+    border: 2px solid red;
+    padding: 60px 40px;
+    margin: auto;
+}
+.content {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+.badge {
+    display: inline-block;
+    border-radius: 50px;
+    background: #fff;
+    color: black;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.first-content h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "Modern Negra";
+    line-height: 8vh;
+}
+.sub-content p {
+    opacity: 0.8;
+    font-size: 17px;
+}
+.rating-d {
+    margin-top: 30px;
+}
+.rating-d p {
+    opacity: 1;
+}
+.rating-d :first-child{
+    font-size: 20px;
+    font-weight: 600;
+}
+.rating-d p:last-child {
+    font-size: 14px;
+    
 }
