@@ -22,7 +22,7 @@ const About = () => {
         </div>
 
         <div className="top-grid">
-             <div className="ab-i-holder">
+             <div className="ab-i-holder ">
                  <img src="/images/abt1.png" alt="" />
              </div>
              <div className="ab-i-holder">
