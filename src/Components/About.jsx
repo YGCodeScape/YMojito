@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <div id='about' className="container">
-        <div className='mb-12 border'>
+        <div className='mb-12'>
              <div className="content">
                  <div className="first-content">
                      <p className="badge">Best Cocktails</p>
@@ -23,20 +23,25 @@ const About = () => {
 
         <div className="top-grid">
              <div className="ab-i-holder ">
+                <div className="noicy-img"></div>
                  <img src="/images/abt1.png" alt="" />
              </div>
              <div className="ab-i-holder">
+                <div className="noicy-img"></div>
                  <img src="/images/abt5.png" alt="" />
              </div>
              <div className="ab-i-holder">
+                <div className="noicy-img"></div>
                  <img src="/images/abt2.png" alt="" />
              </div>
         </div>
         <div className="bottom-grid">
             <div className="ab-i-holder">
+                <div className="noicy-img"></div>
                 <img src="/images/abt3.png" alt="" />
             </div>
             <div className="ab-i-holder">
+                <div className="noicy-img"></div>
                 <img src="/images/abt4.png" alt="" />
             </div>    
         </div>
