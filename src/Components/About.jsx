@@ -1,6 +1,36 @@
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { SplitText } from 'gsap/all'
 import React from 'react'
 
 const About = () => {
+    useGSAP(() => {
+        const titleSplit = SplitText.create('#about h2', {
+            type: 'words'
+        })
+
+        const scrollTimeLine = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#about',
+                start: 'top center'
+            }
+        })
+
+        scrollTimeLine.from(titleSplit.words, {
+            opacity: 0,
+            duration: 1,
+            yPercent: 100,
+            ease: 'expo.out',
+            stagger: 0.02
+        })
+        .from('.top-grid div, .bottom-grid div', {
+            opacity: 0,
+            duration: 1,
+            ease: 'power1.inOut',
+            stagger: 0.04,
+        }, '-=0.5')
+    })
+
   return (
     <div id='about' className="container">
         <div className='mb-12'>
@@ -24,25 +54,25 @@ const About = () => {
         <div className="top-grid">
              <div className="ab-i-holder ">
                 <div className="noicy-img"></div>
-                 <img src="/images/abt1.png" alt="" />
+                 <img src="/images/abt1.png" alt="" className='ab-img'/>
              </div>
              <div className="ab-i-holder">
                 <div className="noicy-img"></div>
-                 <img src="/images/abt5.png" alt="" />
+                 <img src="/images/abt5.png" alt="" className='ab-img'/>
              </div>
              <div className="ab-i-holder">
                 <div className="noicy-img"></div>
-                 <img src="/images/abt2.png" alt="" />
+                 <img src="/images/abt2.png" alt="" className='ab-img'/>
              </div>
         </div>
         <div className="bottom-grid">
             <div className="ab-i-holder">
                 <div className="noicy-img"></div>
-                <img src="/images/abt3.png" alt="" />
+                <img src="/images/abt3.png" alt="" className='ab-img'/>
             </div>
             <div className="ab-i-holder">
                 <div className="noicy-img"></div>
-                <img src="/images/abt4.png" alt="" />
+                <img src="/images/abt4.png" alt="" className='ab-img'/>
             </div>    
         </div>
     </div>
