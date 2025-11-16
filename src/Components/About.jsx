@@ -43,9 +43,26 @@ const About = () => {
                         <p>Every cocktail we serve is a reflection of our obsession with detail from the first muddle to the final garnish.
                             That care is what turns a simple drink into something truly memorable
                         </p>
-                        <div className="rating-d" >
-                            <p><span>4.5 /</span> 5</p>
-                            <p>More than +12000 customers</p>
+                        <div className="rating-d " >
+                             <div className='rating-one border-r pr-2'>
+                                 <div className="icons flex text-2xl">
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                    <i class="ri-star-s-fill"></i>
+                                 </div>
+                                 <p className='rating-p font-bold mt-2 mb-2'>4.5 / 5</p>
+                                 <p>More than +12000 customers</p>
+                             </div>
+                             <div className="profile">
+                                <div className="profile-d">
+                                    <div className="p-i-d"><img src="/public/images/profile1.png" alt="" /></div>
+                                    <div className="p-i-d"><img src="/public/images/profile2.png" alt="" /></div>
+                                    <div className="p-i-d"><img src="/public/images/profile3.png" alt="" /></div>
+                                    <div className="p-i-d-m">+20k</div>
+                                </div>
+                             </div>
                         </div>
                  </div>
              </div>
