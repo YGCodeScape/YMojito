@@ -246,6 +246,9 @@ video {
     gap: 15px;
     margin-top: 30px;
 }
+.rating-one {
+    width: 100%;
+}
 .rating-one p {
     opacity: 1;
 }
@@ -254,7 +257,7 @@ video {
     line-height: 1;
 }
 .rating-one p:last-child {
-    font-size: 15px;
+    font-size: 16px;
     opacity: 0.8;
 }
 .profile {

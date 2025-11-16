@@ -39,7 +39,7 @@ const About = () => {
                      <p className="badge">Best Cocktails</p>
                      <h2>Where every details <br /> matters -from muddle<br /> to garnish</h2>
                  </div>
-                 <div className="sub-content w-1/3">
+                 <div className="sub-content w-1/2">
                         <p>Every cocktail we serve is a reflection of our obsession with detail from the first muddle to the final garnish.
                             That care is what turns a simple drink into something truly memorable
                         </p>
@@ -53,7 +53,7 @@ const About = () => {
                                     <i class="ri-star-s-fill"></i>
                                  </div>
                                  <p className='rating-p font-bold mt-2 mb-2'>4.5 / 5</p>
-                                 <p>More than +12000 customers</p>
+                                 <p>More than +12000 Customers</p>
                              </div>
                              <div className="profile">
                                 <div className="profile-d">
