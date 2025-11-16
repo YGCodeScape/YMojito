@@ -304,6 +304,7 @@ video {
     background: url(/public/images/noise.png);
     background-position: center;
     background-size: cover;
+    z-index: 9;`
 }
 .ab-i-holder:hover .noicy-img {
     display: none;
