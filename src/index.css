@@ -372,39 +372,3 @@ video {
  .bottom-grid > div:nth-child(2) {
     flex-basis: 40%;
  } 
-
-/* Art section */
-.second-art{ 
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-.art-text {
-    position: absolute;
-    left: 25%;
-    font-size: 12rem;
-    text-align: center;
-    color: #505050;
-    font-family: var(--font-modern-negra);
-}
-.Art-content {
-    display: flex;
-    flex-direction: row;
-    border: 2px solid red;
-}
-.Art-content {
-    width: 100%;
-    height: 100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cocktail-img {
-    position: absolute;
-    width: 100%;
-    height: 90vh;
-    border-radius: 40px;
-    overflow: hidden;
-}
