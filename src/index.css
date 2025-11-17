@@ -11,7 +11,6 @@
     --font-modern-negra: "Modern Negra", sans-serif;
     --font-serif:  "DM Serif Text", serif;
 }
-
 @utility text-gradient {
     background: linear-gradient(to bottom, #ffffff,#898989);
     -webkit-background-clip: text;
@@ -30,7 +29,7 @@
     mask-image: url("/public/images/mask-img.png");
     mask-repeat: no-repeat;
     mask-position: center;
-    mask-size: 50%;
+    mask-size: 35%;
 }
 
 .cursor {
@@ -375,43 +374,37 @@ video {
  } 
 
 /* Art section */
-#art {
+.second-art{ 
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    padding: 25px;
-    position: relative;
 }
-.will-fade {
-    position: relative;
-    font-size: 6rem;
-    line-height: 0;
-    font-family: var(--font-modern-negra);
+.art-text {
+    position: absolute;
+    left: 25%;
+    font-size: 12rem;
     text-align: center;
-    text-wrap: nowrap;
     color: #505050;
+    font-family: var(--font-modern-negra);
 }
-.second-art {
+.Art-content {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid red;
+}
+.Art-content {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display:flex;
     justify-content: center;
     align-items: center;
 }
-.second-art .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 70px;
-}
+
 .cocktail-img {
+    position: absolute;
     width: 100%;
-    height: 50vh;
+    height: 90vh;
     border-radius: 40px;
     overflow: hidden;
 }
