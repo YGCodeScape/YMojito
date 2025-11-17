@@ -37,12 +37,10 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 40px;
-    height: 40px;
-    background-image: url(/public/images/IceCube.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    border: 1px solid silver;
+    border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
     transform: translate(-50%, -50%);
@@ -233,7 +231,7 @@ video {
 .first-content h2 {
     font-size: 3rem;
     font-weight: 400;
-    font-family: "Modern Negra";
+    font-family: var(--font-modern-negra);
     line-height: 8vh;
 }
 .sub-content p {
@@ -378,6 +376,8 @@ video {
 
 /* Art section */
 #art {
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -385,4 +385,33 @@ video {
     margin-top: 80px;
     padding: 25px;
     position: relative;
+}
+.will-fade {
+    position: relative;
+    font-size: 6rem;
+    line-height: 0;
+    font-family: var(--font-modern-negra);
+    text-align: center;
+    text-wrap: nowrap;
+    color: #505050;
+}
+.second-art {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.second-art .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 70px;
+}
+.cocktail-img {
+    width: 100%;
+    height: 50vh;
+    border-radius: 40px;
+    overflow: hidden;
 }
