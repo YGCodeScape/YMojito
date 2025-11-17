@@ -72,8 +72,8 @@ nav li {
 nav li:hover a{
     opacity: 0.3;
 }
+/* hero section */
 #hero {
-    /* background: url(/public/images/noise.png); */
     z-index: 2;
 }
 .left-leaf {
@@ -375,3 +375,14 @@ video {
  .bottom-grid > div:nth-child(2) {
     flex-basis: 40%;
  } 
+
+/* Art section */
+#art {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding: 25px;
+    position: relative;
+}
