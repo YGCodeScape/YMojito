@@ -372,3 +372,38 @@ video {
  .bottom-grid > div:nth-child(2) {
     flex-basis: 40%;
  } 
+ /* art page */
+#work {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.art-sec {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.art-img {
+    width: 60vw;
+    height: 70vh;
+    border: 2px solid red;
+}
+.art-sec img {
+    width: 200px;
+}
+.art-left-img {
+    position: absolute;
+    left: -30%;
+    top: -8%;
+    transform: rotate(-20deg);
+
+}
+.art-right-img {
+    position: absolute;
+    right: -34%;
+    bottom: -20%;;
+}

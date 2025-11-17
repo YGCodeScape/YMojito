@@ -6,6 +6,7 @@ import Hero from './Components/Hero';
 import Cocktails from './Components/Cocktails';
 import CustomCursor from './Components/CustomCursor';
 import About from './Components/About';
+import Art from './Components/Art';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -17,6 +18,7 @@ const App = () => {
       <Hero />
       <Cocktails />
       <About />
+      <Art />
       {/* <div className="w-full h-screen bg-red-800"></div> */}
     </main>
   )
