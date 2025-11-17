@@ -388,22 +388,24 @@ video {
     align-items: center;
 }
 .art-img {
-    width: 60vw;
-    height: 70vh;
-    border: 2px solid red;
+    width: 45vw;
+    height: 68vh;
+    border-radius: 20px;
+    background-image: url(/images/under-img.jpg);
+    background-position: center;
+    background-size: contain;
 }
 .art-sec img {
     width: 200px;
 }
 .art-left-img {
     position: absolute;
-    left: -30%;
+    left: -50%;
     top: -8%;
-    transform: rotate(-20deg);
-
+    transform: rotate(12deg);
 }
 .art-right-img {
     position: absolute;
-    right: -34%;
+    right: -50%;
     bottom: -20%;;
 }

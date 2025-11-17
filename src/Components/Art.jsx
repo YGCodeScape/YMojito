@@ -2,7 +2,7 @@ import React from 'react'
 
 const Art = () => {
   return (
-    <div id='work' className='w-full h-screen border'>
+    <div id='work' className='w-full h-screen'>
         <div className="art-sec">
              <img src="/public/images/drink4.png" alt=""  className='art-left-img'/>
              <div className="art-img"></div>
