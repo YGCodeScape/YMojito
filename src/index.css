@@ -3,6 +3,7 @@
 @font-face {
     font-family: "Modern Negra";
     src: url("/public/fonts/Modern\ Negra\ Demo.ttf") format("woff");
+    font-display: swap;
 }
 :root {
     --color-yellow: #e7d393;
