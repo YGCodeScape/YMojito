@@ -28,18 +28,18 @@ const Art = () => {
           trigger: wrapper,
           start: "top center",
           end: "bottom center",
-          scrub: 1,
+          scrub: 4,
         }
       }
     );
   }, []);
 
   return (
-    <div id='work' ref={wrapperRef} className='w-full h-screen'>
+    <div id='work' ref={wrapperRef} >
         <div className="art-sec">
              <img src="/public/images/drink4.png" alt=""  className='art-left-img'/>
              <div ref={artRef} className="art-img"></div>
-            <img src="/public/images/cup-2.png" alt="" className='art-right-img'/>
+             <img src="/public/images/cup-2.png" alt="" className='art-right-img'/>
         </div>
         <div className="art-text">
             <h2>Made with Craft Poured with Passion</h2>

@@ -19,7 +19,7 @@ const App = () => {
       <Cocktails />
       <About />
       <Art />
-      <div className="w-full h-screen bg-red-800"></div>
+      <div className="w-full h-screen bg-black"></div>
     </main>
   )
 }
