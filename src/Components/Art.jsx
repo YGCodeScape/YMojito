@@ -28,7 +28,7 @@ const Art = () => {
           trigger: wrapper,
           start: "top center",
           end: "bottom center",
-          scrub: true,
+          scrub: 3,
         }
       }
     );

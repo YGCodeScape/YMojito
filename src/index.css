@@ -433,3 +433,22 @@ video {
     line-height: 1;
     font-family: var(--font-modern-negra);
 }
+
+/* menu section */
+#menu {
+    position: relative;
+    width: 100%;
+    border: 2px solid red;
+}
+#m-left-leaf {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+}
+#m-right-leaf {
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: contain;
+}
