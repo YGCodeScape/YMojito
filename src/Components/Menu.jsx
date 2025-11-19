@@ -4,8 +4,15 @@ import { allCocktails } from '../../constants'
 const Menu = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    const totalCocktails = allCocktails.length;
+    const goToSlide = (index) => {
+        const newIndex = (index + totalCocktails) % totalCocktails;
+
+        setCurrentIndex(newIndex);
+    }
+
   return (
-    <section id="menu" aria-labelledby='menu-heading' className="radial-gradient h-screen px-5 py-20">
+    <section id="menu" aria-labelledby='menu-heading' className=" h-screen px-5 py-20">
         <img src="/images/slider-left-leaf.png" alt="" id='m-left-leaf' className="w-1/5"/>
         <img src="/images/slider-right-leaf.png" alt="" id='m-right-leaf' className="w-1/6"/>
 
@@ -16,7 +23,9 @@ const Menu = () => {
                  const isActive = index === currentIndex;
 
                  return (
-                    <button className="Cock-btn" key={cocktail.id}>
+                    <button key={cocktail.id} className={
+                         `${isActive ? 'text-white border-white' : 'text-white/50 border-white/50' }`
+                         } onClick={() => goToSlide(index)} >
                         {cocktail.name}
                     </button>
                  )

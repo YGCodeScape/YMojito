@@ -460,13 +460,15 @@ video {
     gap: 35px;
     justify-content: center;
 }
-.Cock-btn {
+.cocktail-tabs button {
     font-size: 1.7rem;
     font-family: var(--font-modern-negra);
     padding-bottom: 3px;
     cursor: pointer;
-    border-bottom: 2px solid #ffc6fd;
-    display: inline-block;
+    display: block;
     padding: 0;
     margin: 0;
+}
+.cocktail-tabs button:hover {
+    color: #ffc6fd;
 }
