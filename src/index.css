@@ -452,3 +452,21 @@ video {
     right: 0;
     object-fit: contain;
 }
+.cocktail-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 180px));
+    position: relative;
+    z-index: 9;
+    gap: 35px;
+    justify-content: center;
+}
+.Cock-btn {
+    font-size: 1.7rem;
+    font-family: var(--font-modern-negra);
+    padding-bottom: 3px;
+    cursor: pointer;
+    border-bottom: 2px solid #ffc6fd;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
