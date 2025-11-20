@@ -11,10 +11,18 @@ const Menu = () => {
         setCurrentIndex(newIndex);
     }
 
+    const getCocktailAt = (indexOffset) => {
+      return allCocktails[(currentIndex + indexOffset + totalCocktails) % totalCocktails];
+    }
+
+    const currentCocktail = getCocktailAt(0);
+    const prevCocktail = getCocktailAt(-1);
+    const nextCocktail = getCocktailAt(+1);
+
   return (
-    <section id="menu" aria-labelledby='menu-heading' className=" h-screen px-5 py-20">
-        <img src="/images/slider-left-leaf.png" alt="" id='m-left-leaf' className="w-1/5"/>
-        <img src="/images/slider-right-leaf.png" alt="" id='m-right-leaf' className="w-1/6"/>
+    <section id="menu" aria-labelledby='menu-heading' className=" h-screen px-5 py-20 ">
+        <img src="/images/slider-left-leaf.png" alt="" id='m-left-leaf' className="w-1/7"/>
+        <img src="/images/slider-right-leaf.png" alt="" id='m-right-leaf' className="w-1/7"/>
 
         <h2 id="menu-heading" className="sr-only">Cocktail Menu</h2>
 
@@ -24,12 +32,31 @@ const Menu = () => {
 
                  return (
                     <button id="cock-btn" key={cocktail.id} className={
-                         `${isActive ? 'text-white border-white' : 'text-white/50 border-white/50'}`
+                         `${isActive ? 'text-[#ffc6fd] border-b-2 ' : 'text-white/50 border-none'}`
                          } onClick={() => goToSlide(index)} >
                         {cocktail.name}
                     </button>
                  )
             })}
+        </div>
+
+        <div className="menu-content container mx-auto">
+           <div className="arrow">
+             <button className="arrow-btn max-w-36 " onClick={() => goToSlide(currentIndex - 1)}>
+               <span>{prevCocktail.name}</span>
+               <img src="/images/right-arrow.png" alt="Previous" aria-hidden="true" className="arrow-img" />
+             </button>
+
+             <button className="arrow-btn max-w-36" onClick={() => goToSlide(currentIndex + 1)}>
+               <span>{nextCocktail.name}</span>
+               <img src="/images/left-arrow.png" alt="Next" aria-hidden="true" className="arrow-img" />
+             </button>
+           </div>
+
+           <div className="cocktail-box flex-center">
+              <img src={currentCocktail.image} alt="" className="object-contain h-[80vh]" />
+           </div>
+
         </div>
     </section>
   )
