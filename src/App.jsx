@@ -16,9 +16,9 @@ const App = () => {
     <main>
       <CustomCursor />
       <Navbar />
-      {/* <Hero />
-      <Cocktails />
-      <About /> */}
+      <Hero />
+      {/* <Cocktails /> */}
+      {/* <About /> */}
       {/* <Art /> */}
       {/* <Menu/> */}
       {/* <div className="w-full h-screen bg-black"></div> */}
