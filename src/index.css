@@ -574,9 +574,20 @@ video {
     }
     .nav-hold img {
         width: 45px;
+        height: 45px;
+    }
+    .nav-hold span {
+        font-size: 2.5rem;
     }
     .nav-hold {
         padding: 10px;
         flex-direction: column;
+        gap: 5px;
     } 
+    .nav-hold ul {
+        gap: 5px;
+    }
+    .nav-hold li{
+        font-size: 1.1rem;
+    }
 }
