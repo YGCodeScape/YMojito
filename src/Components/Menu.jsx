@@ -1,7 +1,8 @@
-import React, { use, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { allCocktails } from '../../constants'
 
 const Menu = () => {
+    const contentRef = useRef(); 
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const totalCocktails = allCocktails.length;
@@ -56,6 +57,18 @@ const Menu = () => {
            <div className="cocktail-box flex-center">
               <img src={currentCocktail.image} alt="" className="object-contain h-[80vh]" />
            </div>
+
+          <div className="cocktail-info container mx-auto">
+             <div className="cock-info-div" ref={contentRef}>
+                 <h5>Recipes for:</h5>
+                 <p id ="title">{currentCocktail.name}</p>
+             </div>
+
+             <div className="details w-1/3">
+                <h2>{currentCocktail.title}</h2>
+                <p>{currentCocktail.description}</p>
+             </div>
+          </div>
 
         </div>
     </section>

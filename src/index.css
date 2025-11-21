@@ -54,6 +54,7 @@ body {
     color: white;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-family: "Zain", sans-serif;
 }
 
 nav {
@@ -499,7 +500,6 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -526,14 +526,43 @@ video {
 .arrow-btn:hover {
     color: #ffc6fd;
 }
-
-
+.cocktail-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 13%;
+    padding: 0 40px 0 80px;
+}
+.cock-info-div p{
+    line-height: 0.8;
+    font-size: 2.2rem;
+    font-family: var(--font-modern-negra);
+    font-weight: 500;
+    margin-top: 5px;
+}
+.cock-info-div h5 {
+    font-size: 1rem;
+}
+.details h2 {
+    font-size: 3rem;
+    font-family: var(--font-modern-negra);
+    font-weight: 500;
+    line-height: 0.9;
+    width: 350px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.details p {
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
 
 
 /* media query's */
 /* Tablets: 768px–1199px */
-@media (max-width: 1199px) {
-}
+/* @media (max-width: 1199px) {
+} */
 
 /* Mobile: <768px */
 @media (max-width: 767px) {
