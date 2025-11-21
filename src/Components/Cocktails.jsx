@@ -26,8 +26,8 @@ const Cocktails = () => {
 
   return (
     <section id="cocktails" className='cocktails-sec'>
-      <img src="/public/images/cocktail-left-leaf.png" alt="" className='cock-left-leaf '/>
-      <img src="/public/images/cocktail-right-leaf.png" alt="" className='cock-right-leaf' />
+      <img src="images/cocktail-left-leaf.png" alt="" className='cock-left-leaf '/>
+      <img src="images/cocktail-right-leaf.png" alt="" className='cock-right-leaf' />
 
       <div className="list">
          <div className="popular space-y-4 ">

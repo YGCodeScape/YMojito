@@ -57,9 +57,9 @@ const About = () => {
                              </div>
                              <div className="profile">
                                 <div className="profile-d">
-                                    <div className="p-i-d"><img src="/public/images/profile1.png" alt="" /></div>
-                                    <div className="p-i-d"><img src="/public/images/profile2.png" alt="" /></div>
-                                    <div className="p-i-d"><img src="/public/images/profile3.png" alt="" /></div>
+                                    <div className="p-i-d"><img src="/images/profile1.png" alt="" /></div>
+                                    <div className="p-i-d"><img src="/images/profile2.png" alt="" /></div>
+                                    <div className="p-i-d"><img src="/images/profile3.png" alt="" /></div>
                                     <div className="p-i-d-m">+20k</div>
                                 </div>
                              </div>
