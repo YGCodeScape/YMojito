@@ -21,7 +21,6 @@ const App = () => {
       <About />
       <Art />
       <Menu/>
-      <div className="w-full h-screen bg-black"></div>
     </main>
   )
 }
