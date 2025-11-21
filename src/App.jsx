@@ -17,11 +17,11 @@ const App = () => {
       <CustomCursor />
       <Navbar />
       <Hero />
-      {/* <Cocktails /> */}
-      {/* <About /> */}
-      {/* <Art /> */}
-      {/* <Menu/> */}
-      {/* <div className="w-full h-screen bg-black"></div> */}
+      <Cocktails /> */
+      <About />
+      <Art />
+      <Menu/>
+      <div className="w-full h-screen bg-black"></div>
     </main>
   )
 }
