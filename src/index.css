@@ -829,5 +829,9 @@ video {
     #contact {
         position: absolute;
         top: 655%;
+        padding-top: 130px;
+    }
+    #f-right-leaf, #f-left-leaf {
+        width: 200px;
     }
 }
