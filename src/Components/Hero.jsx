@@ -48,8 +48,8 @@ const Hero = () => {
         .to('.left-leaf', {y : -300}, 0)
 
 
-        const startValue = isMobile ? 'top 50%' : 'center 60%';
-        const endValue = isMobile ? '120% top' : 'bottom top';
+        const startValue = isMobile ? 'top 45%' : 'center 60%';
+        const endValue = isMobile ? '70% top' : 'bottom top';
 
         // video animation timeline
         const tl = gsap.timeline({

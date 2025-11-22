@@ -18,11 +18,11 @@ const App = () => {
       <CustomCursor />
       <Navbar />
       <Hero />
-      <Cocktails /> */
-      <About />
+      {/* <Cocktails /> */}
+      {/* <About />
       <Art />
       <Menu/>
-      <Contact />
+      <Contact /> */}
     </main>
   )
 }
