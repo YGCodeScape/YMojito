@@ -69,6 +69,7 @@ const Contact = () => {
                  ))}
              </div>
         </div>
+         <img src="/images/footer-drinks.png" alt="" className="f-img w-1/4 absolute bottom-0 right-0" />
     </div>
   )
 }
