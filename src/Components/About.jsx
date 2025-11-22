@@ -43,7 +43,7 @@ const About = () => {
                         <p>Every cocktail we serve is a reflection of our obsession with detail from the first muddle to the final garnish.
                             That care is what turns a simple drink into something truly memorable
                         </p>
-                        <div className="rating-d " >
+                        <div className="rating-d ">
                              <div className='rating-one border-r pr-2'>
                                  <div className="icons flex text-2xl">
                                     <i class="ri-star-s-fill"></i>

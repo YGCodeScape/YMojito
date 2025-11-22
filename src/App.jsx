@@ -19,10 +19,10 @@ const App = () => {
       <Navbar />
       <Hero />
       <Cocktails />
-      {/* <About />
-      <Art />
-      <Menu/>
-      <Contact /> */}
+      <About />
+      {/* <Art /> */}
+      {/* <Menu/> */}
+      {/* <Contact /> */}
     </main>
   )
 }

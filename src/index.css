@@ -214,7 +214,7 @@ video {
 }
 /* abut page */
 #about {
-    min-height: 100%;;
+    min-height: 100%;
     padding: 60px 40px;
     margin: auto;
 }
@@ -707,5 +707,56 @@ video {
      .list h3 {
         font-size: 16px;
      }
-     /*  */
+     /* about section */
+     #about {
+        position: absolute;
+        top: 300%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+     }
+     .top-grid, .bottom-grid,
+      .content {
+        flex-direction: column;
+        width: 100%;
+     }
+     .first-content h2{
+        width: 100%;
+        font-size: 2.4rem;
+        line-height: 4vh;
+     }
+     .sub-content {
+        width: 100%;
+     }
+     .sub-content p {
+        width: 340px;
+        font-size: 14px;
+        padding-top: 20px;
+        padding-left: 20px;
+     }
+     .rating-one {
+        width: 50%;
+        line-height: 0;
+     }
+     .rating-d {
+        width: 100%;
+        gap: 0;
+        padding: 0;
+     }
+     .rating-p {
+        margin: 2px;
+     }
+     .p-i-d, .p-i-d-m  {
+        width: 35px;
+        height: 35px;
+     }
+     .rating-one p:last-child  {
+        font-size: 12px;
+     }
+     .icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+    /*  */
 }
