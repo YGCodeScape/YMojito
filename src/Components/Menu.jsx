@@ -64,8 +64,6 @@ const Menu = () => {
         <img src="/images/slider-left-leaf.png" alt="" id='m-left-leaf' className="w-1/7"/>
         <img src="/images/slider-right-leaf.png" alt="" id='m-right-leaf' className="w-1/7"/>
 
-        <h2 id="menu-heading" className="sr-only">Cocktail Menu</h2>
-
         <div className='cocktail-tabs' aria-label='Cocktail-Navigation'>
             {allCocktails.map((cocktail, index) => {
                  const isActive = index === currentIndex;

@@ -512,6 +512,7 @@ video {
     justify-content: space-between;
     position: absolute;
     padding-top: 80px;
+    z-index: 99;
 }
 .arrow-btn {
     cursor: pointer;
@@ -542,6 +543,7 @@ video {
     font-family: var(--font-modern-negra);
     font-weight: 500;
     margin-top: 5px;
+    color: yellow;
 }
 .cock-info-div h5 {
     font-size: 1rem;
@@ -762,6 +764,70 @@ video {
     #work {
         display: none;
     }
+    /* menu sec */
+    #menu {
+        position: absolute;
+        top: 550%;
+        height: 100%;
+    }
+    .cocktail-info {
+        height: 100%;
+    }
+    .menu-content {
+        height: 100%;
+    }
+    #m-left-leaf, #m-right-leaf {
+        display: none;
+    }
+    
+    .cocktail-tabs {
+        grid-template-columns: repeat(2, minmax(0, 180px));
+        gap: 20px;
+    }
+    #cock-btn {
+        font-size: 1.4rem;
+    }
+    .arrow-btn {
+        width: 100px;
+    }
+    .arrow {
+        padding-top: 200px;
+    }
+    .arrow-btn span {
+        font-size: 1.5rem;
+    }
+    .cocktail-info {
+        width: 100%;
+        padding: 0;
+        left: 0;
+        bottom: 25px;
+       flex-direction: column;
+       justify-content: flex-end;
+       gap: 20px;
+    }
 
+    .cocktail-box img {
+        height: 45vh;
+    }
+    .details {
+        width: 100%;
+    }
+    .details h2 {
+        width: 90%;
+        font-size: 1.6rem;
+    }
+    .details p {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    .cock-info-div {
+        width: 100%;
+        padding-top: 0;
+    }
 
+    /* contant sec */
+    #contact {
+        position: absolute;
+        top: 655%;
+    }
 }
