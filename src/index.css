@@ -647,7 +647,6 @@ video {
     #hero {
         height: 150vh;
         overflow: hidden;
-        border: 2px solid red;
     }
     .right-leaf {
         top: 70%;
@@ -693,8 +692,20 @@ video {
      /* cocktail section */
      .cock-left-leaf, .cock-right-leaf {
         width: 110px;
+        bottom: 0;
      }
-     .cock-left-leaf {
-
+     .cocktails-sec {
+        height: 100vh;
+        position: absolute;
+        top: 150%;
+        bottom: 0;
+        left: 0;
      }
+     .list {
+        flex-direction: column;
+     }
+     .list h3 {
+        font-size: 16px;
+     }
+     /*  */
 }

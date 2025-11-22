@@ -18,7 +18,7 @@ const App = () => {
       <CustomCursor />
       <Navbar />
       <Hero />
-      {/* <Cocktails /> */}
+      <Cocktails />
       {/* <About />
       <Art />
       <Menu/>

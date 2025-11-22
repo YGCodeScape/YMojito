@@ -49,7 +49,7 @@ const Hero = () => {
 
 
         const startValue = isMobile ? 'top 45%' : 'center 60%';
-        const endValue = isMobile ? '70% top' : 'bottom top';
+        const endValue = isMobile ? '60% top' : 'bottom top';
 
         // video animation timeline
         const tl = gsap.timeline({
